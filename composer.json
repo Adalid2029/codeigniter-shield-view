@@ -1,0 +1,30 @@
+{
+    "name": "stacknews/codeigniter-shield-views",
+    "description": "Descripción de tu biblioteca de CodeIgniter",
+    "version": "1.0.0",
+    "type": "library",
+    "require": {
+        "php": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tu\\Namespace\\": "src/"
+        },
+        "files": [
+            "src/Controllers/MiControlador.php"
+        ]
+    },
+    "extra": {
+        "installer-paths": {
+            "app/Views/{$name}": [
+                "type:package"
+            ],
+            "public/js/{$name}": [
+                "type:package"
+            ],
+            "public/css/{$name}": [
+                "type:package"
+            ]
+        }
+    }
+}
